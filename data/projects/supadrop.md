@@ -6,7 +6,6 @@ tech: ["React.js", "Supabase", "Metaplex"]
 web: https://supadroptest.vercel.app/exnd
 highlight: /images/work/show/supadrop-highlight.png
 icon: /images/work/show/supadrop-icon.svg
-active: true
 tagline: Community-driven marketplace for authentic 1/1 NFT drops.
 ---
 
