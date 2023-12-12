@@ -39,11 +39,11 @@ export default function Sidebar() {
       url: "https://twitter.com/ahtaufiiq",
       icon: <TwitterLogo />,
     },
-    {
-      title: "Instagram",
-      url: "https://instagram.com/ahtaufiiq",
-      icon: <InstagramLogo />,
-    },
+    // {
+    //   title: "Instagram",
+    //   url: "https://instagram.com/ahtaufiiq",
+    //   icon: <InstagramLogo />,
+    // },
     {
       title: "LinkedIn",
       url: "https://linkedin.com/in/ahmadtaufiq",
@@ -115,12 +115,12 @@ export default function Sidebar() {
       icon: <TwitterLogo size={16} />,
       external: true,
     },
-    {
-      title: "Instagram",
-      url: `https://instagram.com/${process.env.instagram}`,
-      icon: <InstagramLogo size={16} />,
-      external: true,
-    },
+    // {
+    //   title: "Instagram",
+    //   url: `https://instagram.com/${process.env.instagram}`,
+    //   icon: <InstagramLogo size={16} />,
+    //   external: true,
+    // },
     // {
     //   title: "Buy me a Coffee",
     //   url: `https://www.buymeacoffee.com/ahtaufiiq`,

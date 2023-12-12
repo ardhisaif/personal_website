@@ -10,6 +10,4 @@ active: true
 tagline: Community-driven marketplace for authentic 1/1 NFT drops.
 ---
 
-![Pika Screenshot](/images/work/show/pika-preview.png)
-
 Supadrop is community-driven marketplace for authentic NFT drops on Solana – empowering the future of creative economy • connecting passionate creators and collectors.
