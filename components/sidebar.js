@@ -257,7 +257,7 @@ export default function Sidebar() {
                     <RenderLinks sectionItems={LINKS} />
                     <RenderLinks sectionItems={SOCIAL} sectionTitle="Social" />
                   </div>
-                  {renderPrefs()}
+                  {/* {renderPrefs()} */}
                 </div>
               ) : (
                 ""

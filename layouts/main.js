@@ -10,7 +10,7 @@ export default function MainLayout({ children }) {
       <Sidebar />
       <main className="relative w-full ">{children}</main>
       <footer className="w-full mt-auto pt-12  ">
-        <ContentWrapper
+        {/* <ContentWrapper
           width="620px"
           className="border-t border-gray-500/10 py-3"
         >
@@ -27,7 +27,7 @@ export default function MainLayout({ children }) {
               <option value="dark">Dark</option>
             </select>
           </div>
-        </ContentWrapper>
+        </ContentWrapper> */}
       </footer>
     </section>
   );
