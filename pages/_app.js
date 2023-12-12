@@ -33,12 +33,12 @@ function MyApp({ Component, pageProps }) {
           />
         </Head>
         <DefaultSeo
-          title="Hi, I'm Rishi Mohan!"
+          title="Hi, I'm Ahmad Taufiq!"
           description="I'm a designer and front-end engineer by profession. I build SaaS apps, like to travel, take photos and binge try Cafes and Restaurants."
           canonical={canonicalUrl}
           openGraph={{
-            site_name: "Hi, I'm Rishi Mohan!",
-            title: "Hi, I'm Rishi Mohan!",
+            site_name: "Hi, I'm Ahmad Taufiq!",
+            title: "Hi, I'm Ahmad Taufiq!",
             description:
               "I'm a designer and front-end engineer by profession. I build SaaS apps, like to travel, take photos and binge try Cafes and Restaurants.",
             images: [
@@ -46,13 +46,13 @@ function MyApp({ Component, pageProps }) {
                 url: "https://rishimohan.me/images/site/meta.jpg",
                 width: 800,
                 height: 600,
-                alt: "Rishi Mohan",
+                alt: "Ahmad Taufiq",
               },
             ],
           }}
           twitter={{
-            handle: "@thelifeofrishi",
-            site: "@thelifeofrishi",
+            handle: "@ahtaufiiq",
+            site: "@ahtaufiiq",
             cardType: "summary_large_image",
           }}
           additionalLinkTags={[

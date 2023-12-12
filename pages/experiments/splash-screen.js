@@ -67,11 +67,11 @@ export default function Splash() {
   return (
     <>
       <NextSeo
-        title="Splash Screen - Rishi Mohan"
+        title="Splash Screen - Ahmad Taufiq"
         description="An open-source splash screen implementation for web apps made in Tailwind CSS and React"
         openGraph={{
-          site_name: "Hi, I'm Rishi Mohan!",
-          title: "Splash Screen Implementation on Web - Rishi Mohan",
+          site_name: "Hi, I'm Ahmad Taufiq!",
+          title: "Splash Screen Implementation on Web - Ahmad Taufiq",
           description: "An open-source splash screen implementation for web apps made in Tailwind CSS and React.",
         }}
       />

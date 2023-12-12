@@ -5,17 +5,17 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Travel Map – Rishi Mohan"
+        title="Travel Map – Ahmad Taufiq"
         description="I've created this page to visualize all the locations I've been so far."
         openGraph={{
-          site_name: "Travel Map – Rishi Mohan",
-          title: "Travel Map – Rishi Mohan",
+          site_name: "Travel Map – Ahmad Taufiq",
+          title: "Travel Map – Ahmad Taufiq",
           description:
             "I've created this page to visualize all the locations I've been so far.",
         }}
         twitter={{
-          handle: "@thelifeofrishi",
-          site: "@thelifeofrishi",
+          handle: "@ahtaufiiq",
+          site: "@ahtaufiiq",
           cardType: "summary_large_image",
         }}
       />
@@ -43,7 +43,7 @@ export default function Home() {
           <p>
             The other aspect of travelling that I love is capturing moments, and
             that helped me up my photography game a bit. You can head over to my{" "}
-            <a href="https://instagram.com/thelifeofrishi">Instagram</a> or{" "}
+            <a href="https://instagram.com/ahtaufiiq">Instagram</a> or{" "}
             <a href="http://unsplash.com/@rishi">Unsplash</a> to check some of
             the photos I've taken while exploring beautiful destinations. Lakes,
             the mountains, greenery and the clouds in the sky, scenes that you

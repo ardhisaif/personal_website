@@ -41,21 +41,21 @@ export default function WorkContent({ post }) {
             className="flex items-center justify-center w-full px-4 py-1 text-base text-center text-white bg-black rounded-lg shadow-lg dark:bg-white dark:text-black"
           >
             <span className="w-5 h-5 mr-2">{ExternalLinkIcon}</span>
-            <span>Web App</span>
+            <span>Website</span>
           </a>
         ) : (
           ""
         )}
-        {post?.ios ? (
+        {post?.changelog ? (
           <a
-            href={post?.ios}
+            href={post?.web}
             target="_blank"
             className="flex items-center justify-center w-full px-4 py-1 text-base text-center text-white bg-black rounded-lg shadow-lg dark:bg-white dark:text-black"
           >
-            <span className="w-5 h-5 mr-2">{AppleIcon}</span>
-            <span>iOS App</span>
+            <span className="w-5 h-5 mr-2">{ExternalLinkIcon}</span>
+            <span>Changelog</span>
           </a>
-        ) : (
+        )  : (
           ""
         )}
       </div>

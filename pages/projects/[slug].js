@@ -15,19 +15,19 @@ export default function Post({ allPosts, post }) {
   return (
     <div className="flex w-full md:pt-5">
       <NextSeo
-        title={`${post.title} - Rishi Mohan`}
+        title={`${post.title} - Ahmad Taufiq`}
         description={
           post.content.slice(0, 200)?.replace(/<[^>]*>?/gm, "") || ""
         }
         openGraph={{
-          site_name: `${post.title} - Rishi Mohan`,
-          title: `${post.title} - Rishi Mohan`,
+          site_name: `${post.title} - Ahmad Taufiq`,
+          title: `${post.title} - Ahmad Taufiq`,
           description:
             post.content.slice(0, 200)?.replace(/<[^>]*>?/gm, "") || "",
         }}
         twitter={{
-          handle: "@thelifeofrishi",
-          site: "@thelifeofrishi",
+          handle: "@ahtaufiiq",
+          site: "@ahtaufiiq",
           cardType: "summary_large_image",
         }}
       />
@@ -48,6 +48,7 @@ export async function getStaticProps({ params }) {
     "excerpt",
     "content",
     "link",
+    "highlight",
     "icon",
   ]);
 
@@ -62,6 +63,8 @@ export async function getStaticProps({ params }) {
     "tech",
     "web",
     "ios",
+    "changelog",
+    "highlight",
     "icon",
   ]);
 

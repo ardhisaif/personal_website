@@ -31,27 +31,27 @@ export default function Sidebar() {
   const SOCIAL_LINKS = [
     {
       title: "Email",
-      url: "mailto:hi@rishimohan.me",
+      url: "mailto:ataufiq665@gmail.com",
       icon: <Envelope />,
     },
     {
       title: "Twitter",
-      url: "https://twitter.com/thelifeofrishi",
+      url: "https://twitter.com/ahtaufiiq",
       icon: <TwitterLogo />,
     },
     {
       title: "Instagram",
-      url: "https://instagram.com/thelifeofrishi",
+      url: "https://instagram.com/ahtaufiiq",
       icon: <InstagramLogo />,
     },
     {
       title: "LinkedIn",
-      url: "https://linkedin.com/in/qaplen",
+      url: "https://linkedin.com/in/ahmadtaufiq",
       icon: <LinkedinLogo />,
     },
     {
       title: "Github",
-      url: "https://github.com/rishimohan",
+      url: "https://github.com/ahtaufiiq",
       icon: <GithubLogo />,
     },
   ];
@@ -68,12 +68,12 @@ export default function Sidebar() {
       icon: <House size={16} />,
       active: pathname === "/",
     },
-    {
-      title: "Blog",
-      url: "/blog",
-      icon: <Note size={16} />,
-      active: pathname.includes("/blog"),
-    },
+    // {
+    //   title: "Blog",
+    //   url: "/blog",
+    //   icon: <Note size={16} />,
+    //   active: pathname.includes("/blog"),
+    // },
     {
       title: "Projects",
       url: "/projects",
@@ -86,22 +86,16 @@ export default function Sidebar() {
     //   icon: <Flask size={16} />,
     //   active: pathname.includes("/experiments"),
     // },
-    {
-      title: "Travel Map",
-      url: "/map",
-      icon: <Compass size={16} />,
-      active: pathname === "/map",
-    },
     // {
     //   title: "Newsletter",
-    //   url: "https://thelifeofrishi.substack.com",
+    //   url: "https://ahtaufiiq.substack.com",
     //   icon: <Newspaper size={16} />,
     //   active: false,
     //   external: true,
     // },
     {
       title: "Resume",
-      url: "https://peerlist.io/rishimohan",
+      url: "https://tinyurl.com/taufiq-resume",
       icon: <IdentificationCard size={16} />,
       active: false,
       external: true,
@@ -111,7 +105,7 @@ export default function Sidebar() {
   const SOCIAL = [
     {
       title: "Github",
-      url: `https://github.com/rishimohan`,
+      url: `https://github.com/ahtaufiiq`,
       icon: <GithubLogo size={16} />,
       external: true,
     },
@@ -129,13 +123,13 @@ export default function Sidebar() {
     },
     // {
     //   title: "Buy me a Coffee",
-    //   url: `https://www.buymeacoffee.com/thelifeofrishi`,
+    //   url: `https://www.buymeacoffee.com/ahtaufiiq`,
     //   icon: <Coffee size={16} />,
     //   external: true,
     // },
     {
-      title: "hi@rishimohan.me",
-      url: `mailto:hi@rishimohan.me`,
+      title: "ataufiq665@gmail.com",
+      url: `mailto:ataufiq665@gmail.com`,
       icon: <At size={16} />,
       external: false,
     },

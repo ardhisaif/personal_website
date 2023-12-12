@@ -12,26 +12,26 @@ const TIMELINE = [
     title: "Turned 29, did a 3 week long birthday trip!",
     description:
       "Travelled 4 different cities in 4 different European countries. Made great memories :)",
-    // link: "https://twitter.com/thelifeofrishi/status/1635590849475096577?s=20",
+    // link: "https://twitter.com/ahtaufiiq/status/1635590849475096577?s=20",
   },
   {
     date: "Mar 12, 2023",
     title: "Moved to Berlin",
     description: "Always wanted to travel in the west :)",
-    link: "https://twitter.com/thelifeofrishi/status/1635590849475096577?s=20",
+    link: "https://twitter.com/ahtaufiiq/status/1635590849475096577?s=20",
   },
   {
     date: "Mar 10, 2023",
     title: "Pika crossed $2,000 MRR",
     description: "9 months for the first $1K MRR, ~4 months for the next :D",
-    link: "https://twitter.com/thelifeofrishi/status/1633760970823827456?s=20",
+    link: "https://twitter.com/ahtaufiiq/status/1633760970823827456?s=20",
   },
   {
     date: "Dec 01, 2022",
     title: "Joined Hive.one",
     description:
       "Joined Hive team as frontend engineer to build a new way to explore Twitter",
-    link: "https://twitter.com/thelifeofrishi/status/1598692245401501696",
+    link: "https://twitter.com/ahtaufiiq/status/1598692245401501696",
   },
   {
     date: "Nov 12, 2022",
@@ -121,13 +121,16 @@ export default function Home({ allPosts, allProjects, post }) {
           <h2 className="mb-3 md:mb-4 text-3xl">
             <span className="opacity-70">Hi 👋, I'm </span>
             <span className="font-bold text-black dark:text-white">
-              Rishi Mohan!
+              Ahmad Taufiq!
             </span>
           </h2>
           <div>
-            <ul className="!mb-0 list-disc pl-4 dark:text-gray-300/80 space-y-1 md:space-y-[6px]">
-              <li>Design engineer, entrepreneur based in Berlin</li>
-              <li>
+          <div className="!mb-0 list-disc space-y-1 md:space-y-[6px]">
+              <p className="text-justify">A software engineer with three years of experience who is customer-focused and committed to delivering valuable and impactful products.</p>
+              <p className="text-justify pt-2">I’ve successfully tackled various tech challenges, including developing an NFT Marketplace and an advanced Discord bot.</p>
+              <p className="text-justify pt-2">These projects not only showcased my problem-solving abilities but also highlighted my adaptability to learn new technologies.</p>
+            </div>
+            {/* <li>
                 Building{" "}
                 <Link
                   className="border-b border-gray-300 hover:border-gray-400 dark:text-gray-200"
@@ -136,90 +139,36 @@ export default function Home({ allPosts, allProjects, post }) {
                   Pika
                 </Link>{" "}
                 (design tool at $2,500 MRR and growing)
-              </li>
-              <li>
-                Working with{" "}
-                <Link
-                  className="border-b border-gray-300 hover:border-gray-400 dark:text-gray-200"
-                  href="https://hive.one"
-                  target="_blank"
-                >
-                  Hive
-                </Link>
-                , previously at{" "}
-                <Link
-                  className="border-b border-gray-300 hover:border-gray-400 dark:text-gray-200"
-                  href="https://bigbinary.com"
-                  target="_blank"
-                >
-                  BigBinary
-                </Link>
-                ,{" "}
-                <Link
-                  className="border-b border-gray-300 hover:border-gray-400 dark:text-gray-200"
-                  href="https://instahyre.com"
-                  target="_blank"
-                >
-                  Instahyre
-                </Link>
-              </li>
-
-              <li>
-                Kinda active on Twitter{" "}
-                <Link
-                  className="border-b border-gray-300 hover:border-gray-400 dark:text-gray-200"
-                  href="https://twitter.com/thelifeofrishi"
-                  target="_blank"
-                >
-                  @thelifeofrishi
-                </Link>
-              </li>
-
-              <li>Love to travel, explore and capture life</li>
-            </ul>
+              </li> */}
           </div>
         </div>
         <div className="pt-6 pb-2">
           <h2 className="text-xl font-medium text-black dark:text-white mb-4">
-            Side-projects
+            Projects
           </h2>
-          <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="mt-4 grid grid-cols-1  gap-4">
             {allProjects?.map((project) => (
               <div className="min-w-[120px] flex-col px-4 py-2 border border-gray-200 dark:border-gray-700/70 rounded-lg hover:bg-gray-100 dark:bg-gray-800/70 dark:hover:bg-gray-800 dark:hover:border-gray-700 dark:shadow-[0_0_8px_rgba(0,0,0,0.8)] shadow-[0_0_8px_rgba(0,0,0,0.06)] flex relative ">
-                {project?.ios ? (
-                  <Link
-                    href={project?.ios}
-                    target="_blank"
-                    title={project?.title}
-                  >
-                    <div className="absolute top-[10%] right-[10%] z-10 opacity-50 hover:opacity-100 hover:scale-[1.1] duration-100">
-                      <ArrowSquareOut className="text-base" />
-                    </div>
-                  </Link>
-                ) : project?.web ? (
-                  <Link
-                    href={project?.web}
-                    target="_blank"
-                    title={project?.title}
-                  >
-                    <div className="absolute top-[10%] right-[10%] z-10 opacity-50 hover:opacity-100 hover:scale-[1.1] duration-100">
-                      <ArrowSquareOut className="text-base" />
-                    </div>
-                  </Link>
-                ) : (
-                  ""
-                )}
+
                 <Link
                   href={`/projects/${project?.slug}` || "/"}
                   key={project?.title}
                 >
-                  <div className="py-3 relative">
+                  <div className="py-1 relative">
                     {project?.icon ? (
+                      <>
+                      {project?.highlight ? <img
+                        className="w-full mx-auto rounded drop-shadow-xl"
+                        src={project?.highlight}
+                        alt={project?.title}
+                      />:""}
                       <img
-                        className="w-[40px] drop-shadow-xl"
+                        className="w-[30px] rounded drop-shadow-xl mt-6"
                         src={project?.icon}
                         alt={project?.title}
                       />
+
+                      </>
                     ) : (
                       <>
                         <div className="flex items-center justify-center w-[42px] h-[42px] text-lg font-medium text-white bg-black border border-gray-100 rounded-full dark:border-gray-800 drop-shadow-xl">
@@ -230,17 +179,11 @@ export default function Home({ allPosts, allProjects, post }) {
                   </div>
                   <div className="pb-1">
                     <div className="flex items-center gap-[6px] mt-1">
-                      <h3 className="font-medium text-base">
-                        {project?.title}
-                      </h3>
-                      {project?.active ? (
-                        <div
-                          className="w-[8px] h-[8px] rounded-full bg-green-500"
-                          title="Active"
-                        />
-                      ) : (
-                        ""
-                      )}
+                      <div className="flex justify-center">
+                        <h3 className="font-medium text-base">
+                          {project?.title}
+                        </h3>
+                      </div>
                     </div>
                     {project?.tagline ? (
                       <p className="text-sm opacity-80">{project?.tagline}</p>
@@ -253,7 +196,7 @@ export default function Home({ allPosts, allProjects, post }) {
             ))}
           </div>
         </div>
-        <div className="pt-8 pb-2">
+        {/* <div className="pt-8 pb-2">
           <div className="flex items-center gap-3 pb-3">
             <h2 className=" text-xl font-medium text-black dark:text-white">
               Blog
@@ -263,7 +206,7 @@ export default function Home({ allPosts, allProjects, post }) {
             </Button>
           </div>
           <BlogList data={allPosts?.slice(0, 12)} activeSlug={post?.slug} />
-        </div>
+        </div> */}
         {/* <div>
           <div className="mt-12 mb-4">
             <h2 className="text-base flex items-center">
@@ -305,56 +248,6 @@ export default function Home({ allPosts, allProjects, post }) {
           </div>
         </div> */}
 
-        <div>
-          <div className="flex items-center mt-10 gap-3">
-            <h2 className=" text-xl font-medium text-black dark:text-white">
-              Photos
-            </h2>
-            <Link
-              className="bg-transparent border-gray-200 dark:border-gray-700/70 border text-sm px-2 py-px rounded-lg flex gap-1 items-center"
-              href="https://instagram.com/thelifeofrishi"
-              target="_blank"
-            >
-              <InstagramLogo /> Instagram
-              <ArrowSquareOut />
-            </Link>
-          </div>
-
-          <div className="mt-2 mb-8">
-            <p>
-              I love to travel and take photos. I also have been maintaining a
-              map of all the places I've been to, you can{" "}
-              <Link className="border-b" href="/map">
-                check it here
-              </Link>
-            </p>
-          </div>
-
-          <div className=" mt-5 mb-12 justify-center relative group">
-            <div className="grid grid-cols-3 md:grid-cols-4 gap-5 md:gap-6">
-              {IMAGES?.slice(0, 8)?.map((item) => (
-                <div
-                  key={item.src}
-                  className={clsx(
-                    // item?.className,
-                    "relative bg-gray-100  hover:bg-gray-900 duration-100 ease-in-out rounded-[12px] dark:border-gray-700 hover:shadow-xl md:hover:scale-[1.1]"
-                  )}
-                >
-                  <img
-                    src={item?.src}
-                    alt={item?.place}
-                    className="rounded-[9px] object-cover w-full h-full"
-                    loading="lazy"
-                  />
-                  {/* <div className="font-mono text-xs absolute bottom-[4%] left-[4%] inline-flex bg-white/90 backdrop-blur rounded-[10px] px-2 py-px items-center dark:text-black">
-                  <MapPin size={14} className="mr-1" />
-                  {item?.place}
-                </div> */}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </ContentWrapper>
     </div>
   );
@@ -380,10 +273,12 @@ export async function getStaticProps() {
     "excerpt",
     "content",
     "icon",
+    "highlight",
     "active",
     "tagline",
     "web",
     "ios",
+    "changelog",
   ]);
 
   return {

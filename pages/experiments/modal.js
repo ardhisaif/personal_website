@@ -58,11 +58,11 @@ export default function Modal() {
 
   return <>
     <NextSeo
-      title="Modal Component - Rishi Mohan"
+      title="Modal Component - Ahmad Taufiq"
       description="An open-source modal component implementation for web apps made in Tailwind CSS and React"
       openGraph={{
-        site_name: "Hi, I'm Rishi Mohan!",
-        title: "Modal Component - Rishi Mohan",
+        site_name: "Hi, I'm Ahmad Taufiq!",
+        title: "Modal Component - Ahmad Taufiq",
         description:
           "An open-source modal component implementation for web apps made in Tailwind CSS and React",
       }}

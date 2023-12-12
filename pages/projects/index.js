@@ -7,17 +7,17 @@ export default function Home({ allProjects }) {
   return (
     <>
       <NextSeo
-        title="Projects – Rishi Mohan"
+        title="Projects – Ahmad Taufiq"
         description="A list of all my side-projects, mostly written in React.js, React Native, Next.js and TailwindCSS."
         openGraph={{
-          site_name: "Projects – Rishi Mohan",
-          title: "Projects – Rishi Mohan",
+          site_name: "Projects – Ahmad Taufiq",
+          title: "Projects – Ahmad Taufiq",
           description:
             "A list of all my side-projects, mostly written in React.js, React Native, Next.js and TailwindCSS.",
         }}
         twitter={{
-          handle: "@thelifeofrishi",
-          site: "@thelifeofrishi",
+          handle: "@ahtaufiiq",
+          site: "@ahtaufiiq",
           cardType: "summary_large_image",
         }}
       />
@@ -37,6 +37,7 @@ export async function getStaticProps() {
     "image",
     "excerpt",
     "content",
+    "highlight",
     "icon",
   ]);
 
