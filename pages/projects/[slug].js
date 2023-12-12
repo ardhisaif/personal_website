@@ -22,7 +22,12 @@ export default function Post({ allPosts, post }) {
         openGraph={{
           site_name: `${post.title} - Ahmad Taufiq`,
           title: `${post.title} - Ahmad Taufiq`,
-          images:[post.highlight],
+          images: [
+            {
+              url: post.highlight,
+              alt: post.title,
+            },
+          ],
           description:
             post.content.slice(0, 200)?.replace(/<[^>]*>?/gm, "") || "",
         }}
