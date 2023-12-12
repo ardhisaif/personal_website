@@ -128,7 +128,7 @@ export default function Home({ allPosts, allProjects, post }) {
           <div className="!mb-0 list-disc space-y-1 md:space-y-[6px]">
               <p className="text-justify">A software engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.</p>
               <p className="text-justify pt-2">I’ve successfully tackled various tech challenges, including developing an NFT Marketplace and an advanced Discord bot.</p>
-              <p className="text-justify pt-2">These projects not only showcased my problem-solving abilities but also highlighted my adaptability to learn new technologies.</p>
+              <p className="text-justify pt-2">prev. Instructor at Hacktiv8 Indonesia</p>
             </div>
             {/* <li>
                 Building{" "}
