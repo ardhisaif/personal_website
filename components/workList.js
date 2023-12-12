@@ -15,7 +15,7 @@ export default function WorkList({ allPosts, activeSlug }) {
       // )}
       >
         <h2 className="font-medium text-black text-2xl mb-4 mt-4">
-          Side projects
+          Projects
         </h2>
         <div className="last:!border-b-0">
           {allPosts?.map((post) => (

@@ -34,21 +34,21 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <DefaultSeo
           title="Hi, I'm Ahmad Taufiq!"
-          description="I'm a designer and front-end engineer by profession. I build SaaS apps, like to travel, take photos and binge try Cafes and Restaurants."
+          description="A software engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products."
           canonical={canonicalUrl}
           openGraph={{
             site_name: "Hi, I'm Ahmad Taufiq!",
             title: "Hi, I'm Ahmad Taufiq!",
             description:
-              "I'm a designer and front-end engineer by profession. I build SaaS apps, like to travel, take photos and binge try Cafes and Restaurants.",
-            images: [
-              {
-                url: "https://taufiiq.vercel.app/images/site/meta.jpg",
-                width: 800,
-                height: 600,
-                alt: "Ahmad Taufiq",
-              },
-            ],
+              "A software engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.",
+            // images: [
+            //   {
+            //     url: "https://taufiiq.vercel.app/images/site/meta.jpg",
+            //     width: 800,
+            //     height: 600,
+            //     alt: "Ahmad Taufiq",
+            //   },
+            // ],
           }}
           twitter={{
             handle: "@ahtaufiiq",
