@@ -95,7 +95,7 @@ export default function Sidebar() {
     // },
     {
       title: "Resume",
-      url: "https://tinyurl.com/taufiq-resume",
+      url: "https://drive.google.com/file/d/1B1E0dmqXgOYD8njfhUoeEocpIok_1lg1",
       icon: <IdentificationCard size={16} />,
       active: false,
       external: true,
