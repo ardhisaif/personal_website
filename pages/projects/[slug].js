@@ -22,9 +22,11 @@ export default function Post({ allPosts, post }) {
         openGraph={{
           site_name: `${post.title} - Ahmad Taufiq`,
           title: `${post.title} - Ahmad Taufiq`,
+          images:[post.highlight],
           description:
             post.content.slice(0, 200)?.replace(/<[^>]*>?/gm, "") || "",
         }}
+        
         twitter={{
           handle: "@ahtaufiiq",
           site: "@ahtaufiiq",
