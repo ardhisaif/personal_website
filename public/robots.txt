@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://rishimohan.me/sitemap.xml
+Sitemap: https://taufiiq.vercel.app/sitemap.xml

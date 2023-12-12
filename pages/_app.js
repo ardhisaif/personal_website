@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const canonicalUrl = (
-    `https://rishimohan.me` + (router.asPath === "/" ? "" : router.asPath)
+    `https://taufiiq.vercel.app` + (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
 
   return (
@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
               "I'm a designer and front-end engineer by profession. I build SaaS apps, like to travel, take photos and binge try Cafes and Restaurants.",
             images: [
               {
-                url: "https://rishimohan.me/images/site/meta.jpg",
+                url: "https://taufiiq.vercel.app/images/site/meta.jpg",
                 width: 800,
                 height: 600,
                 alt: "Ahmad Taufiq",

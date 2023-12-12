@@ -14,4 +14,4 @@
 ## License
 
 - Free for learning and personal purposes
-- Link to [rishimohan.me](https://rishimohan.me) mandatory for commercial usage
+- Link to [taufiiq.vercel.app](https://taufiiq.vercel.app) mandatory for commercial usage
