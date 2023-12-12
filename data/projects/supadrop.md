@@ -3,7 +3,7 @@ date: 2021-12-29 21:11:00 +0530
 title: "Supadrop"
 slug: supadrop
 tech: ["React.js", "Supabase", "Metaplex"]
-web: https://supadrop.com
+web: https://supadroptest.vercel.app/exnd
 highlight: /images/work/show/supadrop-highlight.png
 icon: /images/work/show/supadrop-icon.svg
 active: true
