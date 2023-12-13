@@ -3,7 +3,7 @@ date: 2021-12-29 21:11:00 +0530
 title: "Supadrop"
 slug: supadrop
 tech: ["React.js", "Supabase", "Metaplex"]
-web: https://supadroptest.vercel.app/exnd
+web: https://supadrop.com
 highlight: /images/work/show/supadrop-highlight.png
 icon: /images/work/show/supadrop-icon.svg
 tagline: Community-driven marketplace for authentic 1/1 NFT drops.
