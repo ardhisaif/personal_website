@@ -6,7 +6,7 @@ import { getAllPosts } from "pages/api/blog";
 import { getAllProjects } from "pages/api/projects";
 import { ContentWrapper, Button } from "ui";
 
-export default function Home({ allPosts, allProjects, post }) {
+export default function Home({ allPosts,allSkills, allProjects, post }) {
   return (
     <div className="grid md:grid-cols-1 mt-0 md:mt-8">
       <ContentWrapper
@@ -25,6 +25,20 @@ export default function Home({ allPosts, allProjects, post }) {
               <p className="text-justify">A product engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.</p>
               <p className="text-justify pt-2">I am a curious person and I love to learn new things.<br/>That's why in the past 6 years most of my free time spent on passion projects</p>
               <p className="text-justify pt-2">prev. Instructor at Hacktiv8 Indonesia</p>
+              {/* {allSkills? (
+                    <div className="flex my-1  text-xs flex-wrap">
+                      {allSkills?.map((tech) => (
+                        <div
+                          key={tech}
+                          className="font-mono mr-4 mt-2 border border-gray-200 dark:border-gray-500 px-1 py-px rounded-md text-gray-600 dark:text-gray-200 shadow-[0_1px_2px_rgba(0,0,0,0.08)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.3)] text-xs"
+                        >
+                          {tech}
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    ""
+                  )} */}
             </div>
             {/* <li>
                 Building{" "}
@@ -94,11 +108,11 @@ export default function Home({ allPosts, allProjects, post }) {
                     )}
                   </div>
                   {project?.tech ? (
-                    <div className="flex my-3 space-x-4 text-xs">
+                    <div className="flex my-1  text-xs flex-wrap">
                       {project?.tech.map((tech) => (
                         <div
                           key={tech}
-                          className="font-mono border border-gray-200 dark:border-gray-800 px-1 py-px rounded-md text-gray-600 dark:text-gray-400 shadow-[0_1px_2px_rgba(0,0,0,0.08)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.3)] text-xs"
+                          className="font-mono mr-4 mt-2 border border-gray-200 dark:border-gray-400 px-1 py-[3px] rounded-md text-gray-600 dark:text-gray-300 shadow-[0_1px_2px_rgba(0,0,0,0.08)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.3)] text-xs"
                         >
                           {tech}
                         </div>
@@ -197,9 +211,10 @@ export async function getStaticProps() {
     "ios",
     "changelog",
   ]);
-
+  
   return {
     props: {
+      // allSkills,
       allPosts,
       allProjects: allProjects
         .sort((a, b) => new Date(b.date) - new Date(a.date))
