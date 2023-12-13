@@ -6,110 +6,6 @@ import { getAllPosts } from "pages/api/blog";
 import { getAllProjects } from "pages/api/projects";
 import { ContentWrapper, Button } from "ui";
 
-const TIMELINE = [
-  {
-    date: "May 03 to May 22, 2023",
-    title: "Turned 29, did a 3 week long birthday trip!",
-    description:
-      "Travelled 4 different cities in 4 different European countries. Made great memories :)",
-    // link: "https://twitter.com/ahtaufiiq/status/1635590849475096577?s=20",
-  },
-  {
-    date: "Mar 12, 2023",
-    title: "Moved to Berlin",
-    description: "Always wanted to travel in the west :)",
-    link: "https://twitter.com/ahtaufiiq/status/1635590849475096577?s=20",
-  },
-  {
-    date: "Mar 10, 2023",
-    title: "Pika crossed $2,000 MRR",
-    description: "9 months for the first $1K MRR, ~4 months for the next :D",
-    link: "https://twitter.com/ahtaufiiq/status/1633760970823827456?s=20",
-  },
-  {
-    date: "Dec 01, 2022",
-    title: "Joined Hive.one",
-    description:
-      "Joined Hive team as frontend engineer to build a new way to explore Twitter",
-    link: "https://twitter.com/ahtaufiiq/status/1598692245401501696",
-  },
-  {
-    date: "Nov 12, 2022",
-    title: "Pika crossed $1K in monthly recurring revenue",
-    description:
-      "9 months into building Pika, it is my first side-project to cross such big milestone",
-  },
-  {
-    date: "Jan 02, 2022",
-    title: "Launched Pika.style as an open-source project",
-    description:
-      "Built this small tool to save my time designing better screenshots",
-  },
-];
-
-const IMAGES = [
-  {
-    src: "/images/pages/home/rishi-rome-1.jpeg",
-    place: "Rome, Italy",
-    className: "md:rotate-[-2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-nice.jpg",
-    place: "Nice, France",
-    className: "md:rotate-[-2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-nice-1.jpg",
-    place: "Nice, France",
-    className: "md:rotate-[2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-rome.jpeg",
-    place: "Rome, Italy",
-    className: "md:rotate-[-2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-nice-2.jpg",
-    place: "Nice, France",
-    className: "md:rotate-[2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-luxembourg.jpg",
-    place: "Luxembourg",
-    className: "md:rotate-[2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-berlin.jpeg",
-    place: "Berlin, Germany",
-    className: "md:rotate-[-2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-berlin-1.jpeg",
-    place: "Berlin, Germany",
-    className: "md:rotate-[2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-goa-yellow.jpg",
-    place: "Goa, India",
-    className: "md:rotate-[-2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-holi-rishikesh.jpg",
-    place: "Rishikesh, India",
-    className: "md:rotate-[2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-triund.jpg",
-    place: "Triund, India",
-    className: "md:rotate-[-2deg]",
-  },
-  {
-    src: "/images/pages/home/rishi-goa.jpg",
-    place: "Goa, India",
-    className: "md:rotate-[2deg]",
-  },
-];
-
 export default function Home({ allPosts, allProjects, post }) {
   return (
     <div className="grid md:grid-cols-1 mt-0 md:mt-8">
@@ -126,8 +22,8 @@ export default function Home({ allPosts, allProjects, post }) {
           </h2>
           <div>
           <div className="!mb-0 list-disc space-y-1 md:space-y-[6px]">
-              <p className="text-justify">A software engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.</p>
-              <p className="text-justify pt-2">I’ve successfully tackled various tech challenges, including developing an NFT Marketplace and an advanced Discord bot.</p>
+              <p className="text-justify">A product engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.</p>
+              <p className="text-justify pt-2">I am a curious person and I love to learn new things.<br/>That's why in the past 6 years most of my free time spent on passion projects</p>
               <p className="text-justify pt-2">prev. Instructor at Hacktiv8 Indonesia</p>
             </div>
             {/* <li>
@@ -179,18 +75,38 @@ export default function Home({ allPosts, allProjects, post }) {
                   </div>
                   <div className="pb-1">
                     <div className="flex items-center gap-[6px] mt-1">
-                      <div className="flex justify-center">
                         <h3 className="font-medium text-base">
                           {project?.title}
                         </h3>
+                        {project?.active ? (
+                        <div
+                          className="w-[8px] h-[8px] rounded-full bg-green-500"
+                          title="Active"
+                        />
+                      ) : (
+                        ""
+                      )}
                       </div>
-                    </div>
                     {project?.tagline ? (
                       <p className="text-sm opacity-80">{project?.tagline}</p>
                     ) : (
                       ""
                     )}
                   </div>
+                  {project?.tech ? (
+                    <div className="flex my-3 space-x-4 text-xs">
+                      {project?.tech.map((tech) => (
+                        <div
+                          key={tech}
+                          className="font-mono border border-gray-200 dark:border-gray-800 px-1 py-px rounded-md text-gray-600 dark:text-gray-400 shadow-[0_1px_2px_rgba(0,0,0,0.08)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.3)] text-xs"
+                        >
+                          {tech}
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </Link>
               </div>
             ))}
@@ -268,6 +184,7 @@ export async function getStaticProps() {
     "title",
     "date",
     "slug",
+    "tech",
     "author",
     "image",
     "excerpt",

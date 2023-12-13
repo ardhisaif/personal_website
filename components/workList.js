@@ -48,6 +48,7 @@ export default function WorkList({ allPosts, activeSlug }) {
                     </div>
                   )}
                   <h2 className={clsx("font-semibold ml-3")}>{post.title}</h2>
+                 
                 </article>
               </Link>
             </div>

@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
   ).split("?")[0];
 
   return (
-    <ThemeProvider defaultTheme="dark" attribute="class" enableSystem={true}>
+    <ThemeProvider defaultTheme="light" attribute="class" enableSystem={true}>
       <>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,13 +34,13 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <DefaultSeo
           title="Hi, I'm Ahmad Taufiq!"
-          description="A software engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products."
+          description="A product engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products."
           canonical={canonicalUrl}
           openGraph={{
             site_name: "Hi, I'm Ahmad Taufiq!",
             title: "Hi, I'm Ahmad Taufiq!",
             description:
-              "A software engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.",
+              "A product engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.",
             // images: [
             //   {
             //     url: "https://taufiiq.vercel.app/images/site/meta.jpg",
