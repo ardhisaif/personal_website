@@ -2,7 +2,18 @@
 date: 2022-04-23 21:11:00 +0530
 title: "Closa"
 slug: closa
-tech: ["Nodejs", "Discord.js", "Supabase", "Redis", "Express"]
+tech:
+  [
+    "Nodejs",
+    "Express",
+    "Sequelize",
+    "PostgreSQL",
+    "Redis",
+    "JWT",
+    "Xendit",
+    "Discord.js",
+    "Supabase",
+  ]
 web: http://closa.me/
 changelog: http://closa.me/changelog
 highlight: /images/work/show/advance-report.png

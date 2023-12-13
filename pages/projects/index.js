@@ -8,12 +8,12 @@ export default function Home({ allProjects }) {
     <>
       <NextSeo
         title="Projects – Ahmad Taufiq"
-        description="A list of all my side-projects"
+        description="A list of all my selected projects"
         openGraph={{
           site_name: "Projects – Ahmad Taufiq",
           title: "Projects – Ahmad Taufiq",
           description:
-            "A list of all my side-projects",
+            "A list of all my selected projects",
         }}
         twitter={{
           handle: "@ahtaufiiq",
