@@ -14,7 +14,8 @@ function MyApp({ Component, pageProps }) {
   ).split("?")[0];
 
   return (
-  <ThemeProvider defaultTheme="dark" attribute="class" enableSystem={true}>
+    <>
+      <ThemeProvider defaultTheme="dark" attribute="class" enableSystem={true}>
         <>
           <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -77,10 +78,11 @@ function MyApp({ Component, pageProps }) {
 
           <MainLayout>
             <Component {...pageProps} />
-            <Analytics/>  
           </MainLayout>
         </>
       </ThemeProvider>
+      <Analytics/>  
+    </>
   );
 }
 
