@@ -81,12 +81,12 @@ export default function Sidebar() {
       icon: <BracketsCurly size={16} />,
       active: pathname.includes("/projects"),
     },
-    {
-      title: "Experiments",
-      url: "/experiments",
-      icon: <Flask size={16} />,
-      active: pathname.includes("/experiments"),
-    },
+    // {
+    //   title: "Experiments",
+    //   url: "/experiments",
+    //   icon: <Flask size={16} />,
+    //   active: pathname.includes("/experiments"),
+    // },
     // {
     //   title: "Newsletter",
     //   url: "https://ahtaufiiq.substack.com",
