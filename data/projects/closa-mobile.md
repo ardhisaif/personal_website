@@ -3,7 +3,7 @@ date: 2021-12-29 21:11:00 +0530
 title: "Closa Mobile"
 slug: closa-mobile
 tech: ["Flutter", "GetX", "Firebase", "Notification", "Google Auth"]
-web: https://github.com/ahtaufiiq/Closa_Mobile
+code: https://github.com/ahtaufiiq/Closa_Mobile
 highlight: /images/work/show/closa-app-backlog.webp
 icon: /images/work/show/closa-logo.svg
 tagline: help closa’s member share their progress and keep everyone accountable to work towards their goals
