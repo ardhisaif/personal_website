@@ -11,7 +11,7 @@ export default function Home({ allPosts,allSkills, allProjects, post }) {
     <div className="grid md:grid-cols-1 mt-0 md:mt-8">
       <ContentWrapper
         width="620px"
-        className="divide-y divide-gray-200 dark:divide-gray-800 space-y-6"
+        className="divide-y divide-gray-200 dark:divide-gray-800 space-y-6 px-5"
       >
         <div className="">
           <h2 className="mb-3 md:mb-4 text-3xl">
