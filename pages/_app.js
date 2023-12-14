@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
                 "A product engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.",
               images: [
                 {
-                  url: "https://taufiiq.vercel.app/images/site/meta.jpg",
+                  url: "https://ahtaufiiq.vercel.app/images/site/meta.jpg",
                   width: 800,
                   height: 600,
                   alt: "Ahmad Taufiq",
