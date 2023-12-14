@@ -42,14 +42,14 @@ function MyApp({ Component, pageProps }) {
               title: "Hi, I'm Ahmad Taufiq!",
               description:
                 "A product engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.",
-              // images: [
-              //   {
-              //     url: "https://taufiiq.vercel.app/images/site/meta.jpg",
-              //     width: 800,
-              //     height: 600,
-              //     alt: "Ahmad Taufiq",
-              //   },
-              // ],
+              images: [
+                {
+                  url: "https://taufiiq.vercel.app/images/site/meta.jpg",
+                  width: 800,
+                  height: 600,
+                  alt: "Ahmad Taufiq",
+                },
+              ],
             }}
             twitter={{
               handle: "@ahtaufiiq",

@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import { WorkList, WorkContent } from "components";
 import { NextSeo } from "next-seo";
-import { getAllProjects, getPostBySlug } from "pages/api/projects";
 import md2html from "lib/md2html";
 import { ContentWrapper } from "ui";
+import { getAllExperiments, getPostBySlug } from "pages/api/experiments";
 
 export default function Post({ allPosts, post }) {
   const router = useRouter();
@@ -46,7 +46,7 @@ export default function Post({ allPosts, post }) {
 }
 
 export async function getStaticProps({ params }) {
-  const allPosts = getAllProjects([
+  const allPosts = getAllExperiments([
     "title",
     "date",
     "slug",
@@ -58,7 +58,7 @@ export async function getStaticProps({ params }) {
     "highlight",
     "icon",
   ]);
-
+  
   const post = getPostBySlug(params.slug, [
     "title",
     "date",
@@ -69,7 +69,6 @@ export async function getStaticProps({ params }) {
     "link",
     "tech",
     "web",
-    "code",
     "ios",
     "changelog",
     "highlight",
@@ -90,7 +89,8 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllProjects(["slug"]);
+  const posts = getAllExperiments(["slug"]);
+
   return {
     paths: posts.map((post) => {
       return {

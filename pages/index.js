@@ -64,21 +64,19 @@ export default function Home({ allPosts,allSkills, allProjects, post }) {
                   href={`/projects/${project?.slug}` || "/"}
                   key={project?.title}
                 >
+                  {project?.highlight ? <img
+                    className="w-full mx-auto rounded drop-shadow-xl "
+                    src={project?.highlight}
+                    alt={project?.title}
+                  />:""}
                   <div className="py-1 relative">
                     {project?.icon ? (
-                      <>
-                      {project?.highlight ? <img
-                        className="w-full mx-auto rounded drop-shadow-xl"
-                        src={project?.highlight}
-                        alt={project?.title}
-                      />:""}
                       <img
                         className="w-[30px] rounded drop-shadow-xl mt-6"
                         src={project?.icon}
                         alt={project?.title}
                       />
 
-                      </>
                     ) : (
                       <>
                         <div className="flex items-center justify-center w-[42px] h-[42px] text-lg font-medium text-white bg-black border border-gray-100 rounded-full dark:border-gray-800 drop-shadow-xl">

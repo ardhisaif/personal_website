@@ -20,11 +20,11 @@ export default function WorkContent({ post }) {
         {post.title}
       </h1>
       {post?.tech ? (
-        <div className="flex mb-5 space-x-4 text-xs">
+        <div className="flex mb-2 justify-center text-xs flex-wrap">
           {post?.tech.map((tech) => (
             <div
               key={tech}
-              className="font-mono border border-gray-200 dark:border-gray-800 px-1 py-px rounded-md text-gray-600 dark:text-gray-400 shadow-[0_1px_2px_rgba(0,0,0,0.08)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.3)] text-xs"
+              className="font-mono mr-4 mt-3 border border-gray-200 dark:border-gray-400 px-1 py-[3px] rounded-md text-gray-600 dark:text-gray-300 shadow-[0_1px_2px_rgba(0,0,0,0.08)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.3)] text-xs"
             >
               {tech}
             </div>
@@ -48,12 +48,24 @@ export default function WorkContent({ post }) {
         )}
         {post?.changelog ? (
           <a
-            href={post?.web}
+            href={post?.changelog}
             target="_blank"
             className="flex items-center justify-center w-full px-4 py-1 text-base text-center text-white bg-black rounded-lg shadow-lg dark:bg-white dark:text-black"
           >
             <span className="w-5 h-5 mr-2">{ExternalLinkIcon}</span>
             <span>Changelog</span>
+          </a>
+        )  : (
+          ""
+        )}
+        {post?.code ? (
+          <a
+            href={post?.code}
+            target="_blank"
+            className="flex items-center justify-center w-full px-4 py-1 text-base text-center text-white bg-black rounded-lg shadow-lg dark:bg-white dark:text-black"
+          >
+            <span className="w-5 h-5 mr-2">{ExternalLinkIcon}</span>
+            <span>Source Code</span>
           </a>
         )  : (
           ""

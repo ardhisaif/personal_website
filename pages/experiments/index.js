@@ -3,8 +3,10 @@ import Link from "next/link"
 import { ArrowIcon } from "lib/icons";
 import classnames from "classnames";
 import {NextSeo} from "next-seo";
-
-export default function Experiments() {
+import { ContentWrapper, Button } from "ui";
+import { getAllExperiments } from 'pages/api/experiments';
+import ExperimentList from 'components/experimentList';
+export default function Experiments({allExperiments}) {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -32,58 +34,58 @@ export default function Experiments() {
     // },
   ];
 
-  return <>
-    <NextSeo
-      title="Design & Code Explorations - Ahmad Taufiq"
-      description="A collection of design and code experiments, a college where student are ideas. Would the ideas graduate? Let's find out!"
-      openGraph={{
-        site_name: "Hi, I'm Ahmad Taufiq!",
-        title: "Design and Code Explorations - Ahmad Taufiq",
-        description:
-          "A collection of design and code experiments, a college where student are ideas. Would the ideas graduate? Let's find out!",
-      }}
-    />
-    <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden antialiased">
-      <div className="relative p-8 md:p-20 w-full max-w-[800px]">
-        <div className="mb-8">
-          <h2 className="text-4xl font-black text-black dark:text-white md:text-4xl">
-            Experiments
-          </h2>
-          <p className="text-xl text-black/40 drop-shadow-lg dark:text-white/40">
-            UI and Code explorations
-          </p>
-        </div>
-        <div className="relative">
-          {LIST.map((item) => {
-            return (
-              (<Link
-                key={item.url}
-                href={item.url}
-                className={classnames(
-                  "flex flex-row py-4 duration-200 rounded-xl group ",
-                  { "pointer-events-none opacity-30": item.disabled },
-                  { "opacity-80 hover:opacity-100": !item.disabled }
-                )}>
+  return     <>
+  <NextSeo
+    title="Experiments – Ahmad Taufiq"
+    description="A list of all my experiments"
+    openGraph={{
+      site_name: "Experiments – Ahmad Taufiq",
+      title: "Experiments – Ahmad Taufiq",
+      description:
+        "A list of all my experiments",
+    }}
+    twitter={{
+      handle: "@ahtaufiiq",
+      site: "@ahtaufiiq",
+      cardType: "summary_large_image",
+    }}
+  />
+  <ContentWrapper width="620px">
+    <ExperimentList allExperiments={allExperiments} />
+  </ContentWrapper>
+</>
+}
+export async function getStaticProps() {
 
-                <div className="hidden md:flex translate-x-[-20px] mt-px group-hover:translate-x-0 group-hover:opacity-100 duration-[250ms] opacity-0 ease-[cubic-bezier(.75,-0.5,0,1.75)]">
-                  <div className="w-6 h-6">{ArrowIcon}</div>
-                </div>
-                <div className="flex flex-col pl-1">
-                  <h2 className="flex items-center text-lg font-semibold text-gray-800 dark:text-white">
-                    <span className="border-b border-gray-500 dark:border-gray-200 leading-none mb-1">
-                      {item.title}
-                    </span>
-                  </h2>
-                  <p className="text-base opacity-50 dark:opacity-60">
-                    {item.description}
-                  </p>
-                </div>
-
-              </Link>)
-            );
-          })}
-        </div>
-      </div>
-    </div>
-  </>;
+  const allExperiments = getAllExperiments([
+    "title",
+    "date",
+    "slug",
+    "tech",
+    "author",
+    "image",
+    "excerpt",
+    "content",
+    "icon",
+    "highlight",
+    "active",
+    "tagline",
+    "web",
+    "ios",
+    "changelog",
+  ]);
+  
+  return {
+    props: {
+      allExperiments: allExperiments
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .sort((left, right) =>
+          left.hasOwnProperty("active")
+            ? -1
+            : right.hasOwnProperty("active")
+            ? 1
+            : 0
+        ),
+    },
+  };
 }
