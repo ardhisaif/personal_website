@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://taufiiq.vercel.app/sitemap.xml
+Sitemap: https://ahtaufiiq.vercel.app/sitemap.xml

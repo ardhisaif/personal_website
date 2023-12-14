@@ -14,4 +14,4 @@
 ## License
 
 - Free for learning and personal purposes
-- Link to [taufiiq.vercel.app](https://taufiiq.vercel.app) mandatory for commercial usage
+- Link to [ahtaufiiq.vercel.app](https://ahtaufiiq.vercel.app) mandatory for commercial usage

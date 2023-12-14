@@ -11,7 +11,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const canonicalUrl = (
-    `https://taufiiq.vercel.app` + (router.asPath === "/" ? "" : router.asPath)
+    `https://ahtaufiiq.vercel.app` + (router.asPath === "/" ? "" : router.asPath)
   ).split("?")[0];
 
   return (
