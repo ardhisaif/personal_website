@@ -17,7 +17,7 @@ Our goal of the Closa App is to make it easier for our members to:
 
 So here is our first look at Closa App with features that will help us accomplish those goals.
 
-![Todo](/images/work/show/closa-app-todo.webp)
+<img src="/images/work/show/todo.gif" width=200px>
 
 ## Simple To-do
 
