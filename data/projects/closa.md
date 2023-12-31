@@ -15,7 +15,6 @@ tech:
     "Supabase",
   ]
 web: http://closa.me/
-code: https://github.com/beClosa/closa-bot
 changelog: http://closa.me/changelog
 highlight: /images/work/show/advance-report.png
 icon: /images/work/show/closa-logo.svg
