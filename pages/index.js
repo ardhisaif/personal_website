@@ -11,15 +11,17 @@ export default function Home({ allPosts,allSkills, allProjects, post }) {
     <div className="grid md:grid-cols-1 mt-0 md:mt-8">
       <ContentWrapper
         width="620px"
-        className="divide-y divide-gray-200 dark:divide-gray-800 space-y-6 px-5"
+        className="divide-y divide-gray-200 dark:divide-gray-800 space-y-4 px-5"
       >
         <div className="">
+
           <h2 className="mb-3 md:mb-4 text-3xl">
             <span className="opacity-70">Hi 👋, I'm </span>
             <span className="font-bold text-black dark:text-white">
               Ahmad Taufiq!
             </span>
           </h2>
+
           <div>
           <div className="!mb-0 list-disc space-y-1 md:space-y-[6px]">
               <p className="text-justify">A product engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.</p>
@@ -40,6 +42,13 @@ export default function Home({ allPosts,allSkills, allProjects, post }) {
                     ""
                   )} */}
             </div>
+            <div className="flex items-center mt-3 border border-gray-300 py-[8px] pl-[12px] pr-[16px] rounded-full w-[fit-content]">
+            <span class="relative flex h-3 w-3 mr-2 items-center justify-center">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
+            </span>
+            <p className="text-xs font-medium ">OPEN TO WORK</p>
+          </div>
             {/* <li>
                 Building{" "}
                 <Link
@@ -207,7 +216,7 @@ export async function getStaticProps() {
     "tagline",
     "web",
     "ios",
-    "changelog",
+    "learn_more",
   ]);
   
   return {

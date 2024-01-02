@@ -53,7 +53,7 @@ export async function getStaticProps() {
     "tagline",
     "web",
     "ios",
-    "changelog",
+    "learn_more",
   ]);
   
   return {

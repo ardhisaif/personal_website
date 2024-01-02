@@ -71,7 +71,7 @@ export async function getStaticProps({ params }) {
     "web",
     "code",
     "ios",
-    "changelog",
+    "learn_more",
     "highlight",
     "icon",
   ]);

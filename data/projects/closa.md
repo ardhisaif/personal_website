@@ -15,7 +15,7 @@ tech:
     "Supabase",
   ]
 web: http://closa.me/
-changelog: http://closa.me/changelog
+learn_more: https://apri.framer.website/closa
 highlight: /images/work/show/advance-report.png
 icon: /images/work/show/closa-logo.svg
 active: true
