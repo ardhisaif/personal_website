@@ -4,7 +4,7 @@ title: "Supadrop"
 slug: supadrop
 tech: ["Next.js", "Supabase", "Metaplex"]
 web: https://supadrop.com
-code: https://github.com/supavibe-app
+code: https://github.com/supavibe-app/supadrop
 highlight: /images/work/show/supadrop-highlight.png
 icon: /images/work/show/supadrop-icon.svg
 tagline: Community-driven marketplace for authentic 1/1 NFT drops.
