@@ -18,7 +18,7 @@ export default function Home({ allPosts,allSkills, allProjects, post }) {
           <h2 className="mb-3 md:mb-4 text-3xl">
             <span className="opacity-70">Hi 👋, I'm </span>
             <span className="font-bold text-black dark:text-white">
-              Ahmad Taufiq!
+              Ahmad Saifudin Ardhiansyah!
             </span>
           </h2>
 
