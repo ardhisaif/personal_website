@@ -24,7 +24,7 @@ export default function Home({ allPosts,allSkills, allProjects, post }) {
 
           <div>
           <div className="!mb-0 list-disc space-y-1 md:space-y-[6px]">
-              <p className="text-justify">A product engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.</p>
+              <p className="text-justify">A backend developer with +2 years of experience who is customer-focused and committed to delivering valuable and impactful products.</p>
               <p className="text-justify pt-2">I am a curious person and I love to learn new things.<br/>That's why in the past 6 years most of my free time spent on passion projects</p>
               <p className="text-justify pt-2">prev. Instructor at Hacktiv8 Indonesia</p>
               {/* {allSkills? (

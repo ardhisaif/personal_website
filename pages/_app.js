@@ -34,12 +34,12 @@ function MyApp({ Component, pageProps }) {
             />
           </Head>
           <DefaultSeo
-            title="Hi, I'm Ahmad Taufiq!"
+            title="Hi, I'm Ahmad Saifudin!"
             description="A product engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products."
             canonical={canonicalUrl}
             openGraph={{
-              site_name: "Hi, I'm Ahmad Taufiq!",
-              title: "Hi, I'm Ahmad Taufiq!",
+              site_name: "Hi, I'm Ahmad Saifudin!",
+              title: "Hi, I'm Ahmad Saifudin!",
               description:
                 "A product engineer with +3 years of experience who is customer-focused and committed to delivering valuable and impactful products.",
               images: [
